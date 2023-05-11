@@ -13,9 +13,9 @@ You might notice that, from *hashlife* to *Cachelife*, the "hash" has disappeare
 ## Installation
 ### Dependencies
 The algorithm in itself is completely independant of any dependency, but the project as a whole relies on 2 libraries : 
- * **GMP**, for the manipulation of big ints, for the counter of iterations. You could remove this dependency but you would then be limited to 18446744073709551615==2^64 (or 340282366920938463463374607431768211456 == 2^128 ) iterations.
+ * **GMP**, for the manipulation of big ints, for the counter of iterations. You could remove this dependency but you would then be limited to 18446744073709551615==2^64 (or 340282366920938463463374607431768211456 == 2^128 ) iterations.<br>
  Since the performance difference wouldn't be that big, we chose to use GMP by default.
- * **SDL2**, for the GUI. This is used to display the game ( see [Display](##Display)). 
+ * **SDL2**, for the GUI. This is used to display the game ( see [Display](##Display)). <br>
  You can compile the project with or without this library (see [Compiling](##Compiling)).
 
 ### Container
@@ -27,7 +27,7 @@ The install.sh script is provided to ease their (local) installation. You can us
 ```
 ./install.sh
 ```
-The installation, in that case, is made from the GitHub repository of SDL2, and the 6.2.1 version of GMP, which is provided with the project.
+The installation, in that case, is made from the GitHub repository of SDL2, and the 6.2.1 version of GMP, which is provided with the project.<br>
 If you do NOT install these locally, and prefer to use your global versions, you should NOT have to make adjustments to the Makefile.
 
 
@@ -61,11 +61,11 @@ To execute, you can simply type :
 
 
 ## Display
-<u>PLEASE BE VERY CAREFUL WHEN USING DISPLAY FOR A HIGH NUMBER OF ITERATION AND A LOT OF LIVING CELLS.</u>
+<u>PLEASE BE VERY CAREFUL WHEN USING DISPLAY FOR A HIGH NUMBER OF ITERATION AND A LOT OF LIVING CELLS.</u><br>
 The display for this project is very basic.
-It does NOT display every iteration, since that would make the hashlife algorithm useless.
+It does NOT display every iteration, since that would make the hashlife algorithm useless.<br>
 The display is non-moving, it always show the same part of the space. 
-If you have a moving figure leaving the screen, the display will NOT follow.
+If you have a moving figure leaving the screen, the display will NOT follow.<br>
 It only shows a low amount of cells : if you only have a static figure, it will display a square of cells, containing your figure. The unshown rest of the space is empty.
 
 

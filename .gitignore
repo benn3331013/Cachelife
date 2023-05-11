@@ -1,0 +1,19 @@
+*.o
+#build/
+doc/*.txt
+
+
+# Dependencies
+lib/
+share/
+
+SDL/
+bin/
+include/SDL2/
+
+gmp-6.2.1.tar.xz
+gmp-6.2.1/
+include/gmp.h
+
+
+Cachelife
