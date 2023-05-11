@@ -49,14 +49,15 @@ sudo docker run --name cachelife-container -it cachelife
 Then, you can simply run one of the following : 
 ```
 make Cachelife
+make Cachelife_display
 make Cachelife_slow
-make Cachelife_no_display
 ```
 
 To execute, you can simply type : 
 ```
-./Cachelife -l <number of iterations> -f <file containing the initial position>
+./Cachelife -l <number of iterations> -f <file containing the initial position> -e <name of the export file for the final disposition>
 ```
+Please be extremely careful with the '-e' option
 (you can get a list of available commands with --help or -h).
 
 
